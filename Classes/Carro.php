@@ -4,6 +4,7 @@ class Carro
     private $nome;
     private $cor;
     private $porta;
+    private $fabricante;
 
     public function __construct($nome, $cor, $porta)
     {
@@ -41,5 +42,14 @@ class Carro
     public function setPorta($porta)
     {
         $this->porta = $porta;
+    }
+
+    public function setFabricante(Fabricante $f1)
+    {
+        $this->fabricante = $f1;
+    }
+    public function getFabricante()
+    {
+        return $this->fabricante;
     }
 }
