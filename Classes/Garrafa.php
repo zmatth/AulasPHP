@@ -1,16 +1,19 @@
 <?php
-class Garrafa
+class Garrafa extends Utensilio
 {
-    private $capacidade;
-    private $cor;
-    private $material;
+    protected $capacidade;
+    protected $cor;
+    protected $material;
 
 
-    public function __construct($capacidade, $cor, $material)
+    public function __construct($categoria, $capacidade, $cor, $material)
     {
-        $this->capacidade = $capacidade;
-        $this->cor = $cor;
-        $this->material = $material;
+       parent ::__construct($categoria);
+       
+       $this->capacidade = $capacidade;
+       $this->cor = $cor;
+       $this->material = $material;
+       
     }
 
     public function getCapacidade()

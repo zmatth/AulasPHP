@@ -2,15 +2,11 @@
 class Carro
 {
     private $nome;
-    private $cor;
-    private $porta;
     private $fabricante;
 
     public function __construct($nome, $cor, $porta)
     {
         $this->nome     = $nome;
-        $this->cor      = $cor;
-        $this->porta    = $porta;
     }
 
 
