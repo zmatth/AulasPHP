@@ -1,5 +1,5 @@
 <?php
-class Garrafa extends Utensilio
+ final class Garrafa extends Utensilio
 {
     protected $capacidade;
     protected $cor;
